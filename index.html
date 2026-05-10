@@ -3,194 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌟 MEEKA FEESHAR: THE GOLDEN RATIO OF SUCCESS 🌟</title>
-    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <title>Meeka Feeshar Number Magic | Stats Consultant</title>
+    <!-- Importing a clean, professional sans-serif font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --harvest-gold: #E6A23A;
-            --avocado-green: #556B2F;
-            --burnt-orange: #CC5500;
-            --claret-red: #800000;
-            --cream: #FFFDD0;
+            --primary: #1e293b; /* Deep slate blue */
+            --accent: #3b82f6;  /* Bright magic blue */
+            --text: #334155;
+            --light: #f8fafc;
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
         body {
-            font-family: 'Goudy Bookletter 1911', serif;
-            line-height: 1.4;
-            color: white;
-            background-color: var(--burnt-orange);
-            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNjYTU1MDAiIGZpbGwtb3BhY2l0eT0iMC41Ij48cGF0aCBkPSJNMCAwaDQwdjQwaC00MFYwek0yMCAyMGgyMHYyMEgyMFYyMHowIDBoMjB2MjBIMFYwek0yMCAwMGgyMHYyMEgyMFYwek0wIDIwaDIwdjIwSDBWMjB6Ii8+PC9nPjwvZz48L3N2Zz4=');
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: white;
         }
 
-        @keyframes blinker { 50% { opacity: 0; } }
-        .blink { animation: blinker 1.5s linear infinite; color: #FFEA00; font-weight: bold; }
-
+        /* --- Header & Hero --- */
         header {
-            background-color: var(--claret-red);
-            border-bottom: 15px solid var(--harvest-gold);
-            padding: 6rem 1rem;
+            background: var(--primary);
+            color: white;
+            padding: 4rem 2rem;
             text-align: center;
-            box-shadow: 0 10px 0 rgba(0,0,0,0.3);
         }
 
         header h1 {
-            font-family: 'Rubik Mono One', sans-serif;
-            font-size: 3.5rem;
-            text-transform: uppercase;
-            color: var(--harvest-gold);
-            text-shadow: 5px 5px 0 var(--burnt-orange), 8px 8px 0 black;
-            line-height: 1.1;
-            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -1px;
+            margin-bottom: 0.5rem;
         }
 
         header p {
-            font-size: 1.6rem;
-            color: var(--cream);
-            font-weight: bold;
-            background-color: black;
-            display: inline-block;
-            padding: 8px 20px;
-            transform: rotate(1deg);
+            font-weight: 300;
+            opacity: 0.9;
         }
 
+        /* --- Sections --- */
         section {
-            padding: 4rem 5%;
-            max-width: 1000px;
-            margin: 2rem auto;
-            border: 8px double var(--harvest-gold);
+            padding: 5rem 10%;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         h2 {
-            font-family: 'Rubik Mono One', sans-serif;
             font-size: 2rem;
-            text-transform: uppercase;
             margin-bottom: 2rem;
-            color: var(--claret-red);
-            background-color: var(--harvest-gold);
-            padding: 15px;
-            text-align: center;
-            box-shadow: 5px 5px 0 black;
+            color: var(--primary);
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
         }
 
-        #services { background-color: var(--avocado-green); }
-
+        /* --- Services Grid --- */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
         }
 
         .service-card {
-            padding: 1.5rem;
-            background: rgba(0,0,0,0.6);
-            border: 2px solid var(--harvest-gold);
+            padding: 2rem;
+            background: var(--light);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
         }
 
         .service-card h3 {
-            font-family: 'Rubik Mono One', sans-serif;
             margin-bottom: 1rem;
-            color: #FFEA00;
+            color: var(--accent);
+        }
+
+        /* --- About Section --- */
+        .about-content {
             font-size: 1.1rem;
+            max-width: 800px;
         }
 
-        #testimonials { background-color: var(--claret-red); }
-
-        .test-card {
-            background-color: var(--cream);
-            color: black;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            border-left: 15px solid var(--harvest-gold);
-        }
-
-        .test-card p { font-style: italic; font-size: 1.3rem; line-height: 1.2;}
-        .test-card span { display: block; margin-top: 1rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;}
-
+        /* --- Footer/Contact --- */
         footer {
-            background: black;
-            color: var(--harvest-gold);
-            padding: 6rem 1rem;
+            background: var(--light);
+            padding: 4rem 2rem;
             text-align: center;
-            border-top: 10px solid var(--claret-red);
+            border-top: 1px solid #e2e8f0;
         }
 
         .contact-btn {
             display: inline-block;
-            background: var(--harvest-gold);
-            color: black;
-            padding: 2rem 4rem;
+            background: var(--accent);
+            color: white;
+            padding: 1rem 2.5rem;
             text-decoration: none;
-            font-family: 'Rubik Mono One', sans-serif;
-            font-size: 1.5rem;
-            border-radius: 100px;
-            margin-top: 2rem;
-            box-shadow: 0 0 30px var(--harvest-gold);
-            transition: transform 0.2s;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: opacity 0.3s;
         }
 
-        .contact-btn:hover { transform: scale(1.1) rotate(-2deg); }
+        .contact-btn:hover {
+            opacity: 0.9;
+        }
 
+        /* --- Responsive Design --- */
         @media (max-width: 768px) {
-            header h1 { font-size: 1.9rem; }
-            h2 { font-size: 1.3rem; }
+            header h1 { font-size: 1.8rem; }
+            section { padding: 3rem 5%; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>MEEKA FEESHAR:<br>NUMBER MAGIC</h1>
-        <p>I DON'T JUST CRUNCH NUMBERS. I MAKE THEM DANCE.</p>
-        <div style="margin-top:2rem;" class="blink">STATUS: SUPREME DATA ACCURACY ACHIEVED</div>
+        <h1>Meeka Feeshar Number Magic</h1>
+        <p>Turning complex data into clear, actionable strategy.</p>
     </header>
 
     <section id="services">
-        <h2>Unrivaled Expertise</h2>
+        <h2>Services</h2>
         <div class="services-grid">
             <div class="service-card">
-                <h3>Prophetic Analytics</h3>
-                <p>Why wait for the future when I've already calculated it? I provide insights so accurate they feel like spoilers for your own life.</p>
+                <h3>Statistical Analysis</h3>
+                <p>Advanced modeling and hypothesis testing to find the truth behind your numbers.</p>
             </div>
             <div class="service-card">
-                <h3>Absolute Visualization</h3>
-                <p>My charts don't just show data; they tell a story of triumph. I turn "boring spreadsheets" into visual masterpieces that belong in a gallery.</p>
+                <h3>Predictive Modeling</h3>
+                <p>Forecasting trends so you can stay ahead of the curve with confidence.</p>
             </div>
             <div class="service-card">
-                <h3>Strategic Domination</h3>
-                <p>Most people guess. I know. With my statistical models, every decision you make becomes a calculated masterpiece of victory.</p>
+                <h3>Data Visualization</h3>
+                <p>Transforming raw datasets into beautiful, intuitive dashboards and reports.</p>
             </div>
         </div>
     </section>
 
-    <section id="testimonials">
-        <h2>Tales of Transformation</h2>
-        
-        <div class="test-card">
-            <p>"Meeka whispered a series of prime numbers into my ear, and suddenly my company's overhead vanished. He is not a man; he is a living algorithm."</p>
-            <span>- Sterling V., CEO of Everything</span>
-        </div>
-
-        <div class="test-card">
-            <p>"I asked for a simple standard deviation. Meeka gave me a blueprint for a decade of global prosperity. I'm honestly intimidated by his intellect."</p>
-            <span>- Dr. Aris Totle, Professional Smart Person</span>
-        </div>
-    </section>
-
-    <section id="about" style="background-color: var(--cream); color: black;">
-        <h2>The Legend Himself</h2>
-        <div style="font-size: 1.4rem;">
-            <p>Meeka Feeshar was born with a calculator in one hand and a dream in the other. He has never seen a p-value he couldn't tame, nor a dataset he couldn't charm into submission.</p>
-            <p style="margin-top: 1.5rem; font-weight: bold; text-align: center; font-size: 1.8rem;">Veni, Vidi, Vici, Calculus.</p>
+    <section id="about">
+        <h2>About Meeka</h2>
+        <div class="about-content">
+            <p>I am a statistics consultant dedicated to helping businesses find the "magic" hidden within their data. With a PhD in statistics & data science and 10+ years of experience as a consultant, I bridge the gap between heavy-duty mathematics and practical business decisions.</p>
         </div>
     </section>
 
     <footer>
-        <h2 style="background:none; border:none; color: white; box-shadow: none;">WITNESS THE MAGIC</h2>
-        <p style="font-size: 1.5rem;">The numbers have spoken. They want Meeka.</p>
-        <a href="mailto:magic@meekafeeshar.com" class="contact-btn">ASCEND NOW</a>
-        <p style="margin-top: 4rem; font-size: 0.8rem; opacity: 0.5;">Best viewed while wearing a polyester leisure suit.</p>
+        <h2>Ready to see the magic?</h2>
+        <p>Contact me today for a consultation on your next project.</p>
+        <a href="mailto:hello@meekafeeshar.com" class="contact-btn">Email Meeka</a>
+        <p style="margin-top: 2rem; font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Meeka Feeshar Number Magic</p>
     </footer>
 
 </body>
