@@ -3,123 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meeka Feeshar Number Magic | Stats Consultant</title>
-    <!-- Importing a clean, professional sans-serif font -->
+    <title>Meeka Feeshar Number Magic | Statistical Consulting</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #1e293b; /* Deep slate blue */
-            --accent: #3b82f6;  /* Bright magic blue */
-            --text: #334155;
-            --light: #f8fafc;
+            --primary: #0f172a;   /* Midnight Slate */
+            --accent: #3b82f6;    /* Professional Blue */
+            --text-main: #334155; /* Slate Gray */
+            --bg-light: #f8fafc;  /* Soft Ice */
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: var(--text);
+            line-height: 1.7;
+            color: var(--text-main);
             background-color: white;
         }
 
-        /* --- Header & Hero --- */
+        /* --- Header --- */
         header {
             background: var(--primary);
             color: white;
-            padding: 4rem 2rem;
+            padding: 6rem 2rem;
             text-align: center;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 600;
             letter-spacing: -1px;
             margin-bottom: 0.5rem;
         }
 
         header p {
+            font-size: 1.2rem;
             font-weight: 300;
-            opacity: 0.9;
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
-        /* --- Sections --- */
+        /* --- Global Sections --- */
         section {
-            padding: 5rem 10%;
+            padding: 6rem 10%;
             max-width: 1200px;
             margin: 0 auto;
         }
 
         h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
             color: var(--primary);
-            border-left: 4px solid var(--accent);
-            padding-left: 1rem;
+            text-align: center;
         }
 
-        /* --- Services Grid --- */
+        /* --- Services --- */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
         }
 
         .service-card {
-            padding: 2rem;
-            background: var(--light);
-            border-radius: 8px;
-            transition: transform 0.3s ease;
+            padding: 2.5rem;
+            background: var(--bg-light);
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
         }
 
         .service-card:hover {
+            border-color: var(--accent);
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
         }
 
         .service-card h3 {
+            color: var(--primary);
             margin-bottom: 1rem;
-            color: var(--accent);
+            font-size: 1.4rem;
         }
 
-        /* --- About Section --- */
+        /* --- Testimonials --- */
+        #testimonials {
+            background-color: var(--bg-light);
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .testimonial-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: var(--text-main);
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-card span {
+            display: block;
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* --- About --- */
         .about-content {
-            font-size: 1.1rem;
             max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.15rem;
         }
 
-        /* --- Footer/Contact --- */
+        /* --- Footer --- */
         footer {
-            background: var(--light);
-            padding: 4rem 2rem;
+            background: var(--primary);
+            color: white;
+            padding: 5rem 2rem;
             text-align: center;
-            border-top: 1px solid #e2e8f0;
         }
 
         .contact-btn {
             display: inline-block;
             background: var(--accent);
             color: white;
-            padding: 1rem 2.5rem;
+            padding: 1rem 3rem;
             text-decoration: none;
-            border-radius: 50px;
+            border-radius: 6px;
             font-weight: 600;
-            margin-top: 1.5rem;
-            transition: opacity 0.3s;
+            margin: 2rem 0;
+            transition: background 0.3s;
         }
 
-        .contact-btn:hover {
-            opacity: 0.9;
-        }
+        .contact-btn:hover { background: #2563eb; }
 
-        /* --- Responsive Design --- */
         @media (max-width: 768px) {
-            header h1 { font-size: 1.8rem; }
-            section { padding: 3rem 5%; }
+            header h1 { font-size: 2rem; }
+            section { padding: 4rem 5%; }
         }
     </style>
 </head>
@@ -127,39 +163,57 @@
 
     <header>
         <h1>Meeka Feeshar Number Magic</h1>
-        <p>Turning complex data into clear, actionable strategy.</p>
+        <p>Expert statistical consulting for data-driven organizations.</p>
     </header>
 
     <section id="services">
-        <h2>Services</h2>
+        <h2>Consulting Services</h2>
         <div class="services-grid">
             <div class="service-card">
-                <h3>Statistical Analysis</h3>
-                <p>Advanced modeling and hypothesis testing to find the truth behind your numbers.</p>
+                <h3>Advanced Analytics</h3>
+                <p>Custom statistical modeling and hypothesis testing designed to reveal the core drivers of your business performance.</p>
             </div>
             <div class="service-card">
-                <h3>Predictive Modeling</h3>
-                <p>Forecasting trends so you can stay ahead of the curve with confidence.</p>
+                <h3>Predictive Strategy</h3>
+                <p>Leverage historical data to build robust forecasting models that reduce uncertainty and optimize future decision-making.</p>
             </div>
             <div class="service-card">
-                <h3>Data Visualization</h3>
-                <p>Transforming raw datasets into beautiful, intuitive dashboards and reports.</p>
+                <h3>Data Storytelling</h3>
+                <p>Turning complex datasets into clear, executive-ready visualizations and actionable technical reports.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Client Impact</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <p>"Meeka provided clarity to our data that we hadn't been able to find in years. His insights directly influenced our Q3 growth strategy."</p>
+                <span>— Director of Operations, FinTech Corp</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"The predictive models delivered were not only accurate but easy for our non-technical team to implement and understand."</p>
+                <span>— Lead Consultant, Strategy Firm</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"Professional, thorough, and highly analytical. Meeka transformed our messy datasets into a roadmap for success."</p>
+                <span>— Founder, HealthTech Startup</span>
             </div>
         </div>
     </section>
 
     <section id="about">
-        <h2>About Meeka</h2>
+        <h2>The Methodology</h2>
         <div class="about-content">
-            <p>I am a statistics consultant dedicated to helping businesses find the "magic" hidden within their data. With a PhD in statistics & data science and 10+ years of experience as a consultant, I bridge the gap between heavy-duty mathematics and practical business decisions.</p>
+            <p>Meeka Feeshar is a freelance statistics consultant specializing in bridge-building between complex mathematical theory and practical business application. With a focus on precision and integrity, he helps clients unlock the latent value within their data repositories.</p>
         </div>
     </section>
 
     <footer>
-        <h2>Ready to see the magic?</h2>
-        <p>Contact me today for a consultation on your next project.</p>
-        <a href="mailto:hello@meekafeeshar.com" class="contact-btn">Email Meeka</a>
-        <p style="margin-top: 2rem; font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Meeka Feeshar Number Magic</p>
+        <h2>Start a Conversation</h2>
+        <p>Ready to bring rigor and insight to your next project?</p>
+        <a href="mailto:hello@meekafeeshar.com" class="contact-btn">Contact Meeka</a>
+        <p style="opacity: 0.5; font-size: 0.8rem;">&copy; 2026 Meeka Feeshar Number Magic. All rights reserved.</p>
     </footer>
 
 </body>
