@@ -1,20 +1,11 @@
-This is the absolute best way to use vibecoding. A surprise prank page is a fantastic idea.
-
-We are going to pivot hard from "modern and professional" to "1970s local TV commercial." Think aggressive colors, confusing typography, flashing text (using the infamous <blink> effect, simulated via CSS), and over-the-top text that makes Meeka sound like a data wizard who may or may not be dynamic.
-
-Here is the updated index.html. Replace your entire file with this code.
-HTML
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>⚡ MEEKA FEESHAR'S NUMBER MAGIC ⚡ - WE DO NUMBERS GOOD!</title>
-    <!-- GOUDY BOOKLETTER: A semi-funky, slightly off retro serif font -->
+    <title>🌟 MEEKA FEESHAR: THE GOLDEN RATIO OF SUCCESS 🌟</title>
     <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <style>
-        /* THE 70s COLOR PALETTE */
         :root {
             --harvest-gold: #E6A23A;
             --avocado-green: #556B2F;
@@ -23,227 +14,183 @@ HTML
             --cream: #FFFDD0;
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: 'Goudy Bookletter 1911', serif;
             line-height: 1.4;
             color: white;
             background-color: var(--burnt-orange);
-            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNjYTU1MDAiIGZpbGwtb3BhY2l0eT0iMC41Ij48cGF0aCBkPSJNMCAwaDQwdjQwaC00MFYwek0yMCAyMGgyMHYyMEgyMFYyMHowIDBoMjB2MjBIMFYwek0yMCAwMGgyMHYyMEgyMFYwek0wIDIwaDIwdjIwSDBWMjB6Ii8+PC9nPjwvZz48L3N2Zz4='); /* subtle groovy texture */
-            cursor: progress; /* Makes them wait... */
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNjYTU1MDAiIGZpbGwtb3BhY2l0eT0iMC41Ij48cGF0aCBkPSJNMCAwaDQwdjQwaC00MFYwek0yMCAyMGgyMHYyMEgyMFYyMHowIDBoMjB2MjBIMFYwek0yMCAwMGgyMHYyMEgyMFYwek0wIDIwaDIwdjIwSDBWMjB6Ii8+PC9nPjwvZz48L3N2Zz4=');
         }
 
-        /* THE LEGENDARY BLINK EFFECT */
-        @keyframes blinker {
-            50% { opacity: 0; }
-        }
-        .blink {
-            animation: blinker 1.5s linear infinite;
-            color: #FFEA00;
-            font-weight: bold;
-        }
+        @keyframes blinker { 50% { opacity: 0; } }
+        .blink { animation: blinker 1.5s linear infinite; color: #FFEA00; font-weight: bold; }
 
-        /* --- SUPER HERO HEADER --- */
         header {
             background-color: var(--claret-red);
             border-bottom: 15px solid var(--harvest-gold);
-            padding: 5rem 1rem;
+            padding: 6rem 1rem;
             text-align: center;
             box-shadow: 0 10px 0 rgba(0,0,0,0.3);
         }
 
         header h1 {
-            font-family: 'Rubik Mono One', sans-serif; /* Blocky, angry font */
+            font-family: 'Rubik Mono One', sans-serif;
             font-size: 3.5rem;
             text-transform: uppercase;
             color: var(--harvest-gold);
             text-shadow: 5px 5px 0 var(--burnt-orange), 8px 8px 0 black;
-            line-height: 1;
+            line-height: 1.1;
             margin-bottom: 1rem;
         }
 
         header p {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             color: var(--cream);
             font-weight: bold;
             background-color: black;
             display: inline-block;
-            padding: 5px 15px;
-            transform: rotate(-2deg);
+            padding: 8px 20px;
+            transform: rotate(1deg);
         }
 
-        /* --- Sections --- */
         section {
             padding: 4rem 5%;
             max-width: 1000px;
             margin: 2rem auto;
-            border: 5px solid black;
+            border: 8px double var(--harvest-gold);
         }
 
         h2 {
             font-family: 'Rubik Mono One', sans-serif;
-            font-size: 2.2rem;
+            font-size: 2rem;
             text-transform: uppercase;
             margin-bottom: 2rem;
             color: var(--claret-red);
             background-color: var(--harvest-gold);
-            padding: 10px;
+            padding: 15px;
             text-align: center;
-            transform: skewX(-10deg);
+            box-shadow: 5px 5px 0 black;
         }
 
-        /* --- Services --- */
-        #services {
-            background-color: var(--avocado-green);
-        }
+        #services { background-color: var(--avocado-green); }
 
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1rem;
+            gap: 1.5rem;
         }
 
         .service-card {
             padding: 1.5rem;
-            background: rgba(0,0,0,0.4);
-            border: 3px dashed var(--cream);
+            background: rgba(0,0,0,0.6);
+            border: 2px solid var(--harvest-gold);
         }
 
         .service-card h3 {
             font-family: 'Rubik Mono One', sans-serif;
             margin-bottom: 1rem;
             color: #FFEA00;
+            font-size: 1.1rem;
         }
 
-        /* --- Testimonials (NEW) --- */
-        #testimonials {
-            background-color: var(--claret-red);
-        }
+        #testimonials { background-color: var(--claret-red); }
 
         .test-card {
             background-color: var(--cream);
             color: black;
-            padding: 2rem;
+            padding: 2.5rem;
             margin-bottom: 2rem;
-            border-radius: 50px 0 50px 0;
-            position: relative;
+            border-left: 15px solid var(--harvest-gold);
         }
 
-        .test-card p { font-style: italic; font-size: 1.2rem;}
-        .test-card span { display: block; margin-top: 1rem; font-weight: bold; color: var(--claret-red); text-align: right;}
-        
-        /* Small 'quote' effect */
-        .test-card::before {
-            content: "“";
-            font-size: 5rem;
-            position: absolute;
-            top: -20px;
-            left: 10px;
-            color: var(--harvest-gold);
-            opacity: 0.5;
-        }
+        .test-card p { font-style: italic; font-size: 1.3rem; line-height: 1.2;}
+        .test-card span { display: block; margin-top: 1rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;}
 
-        /* --- Contact Footer --- */
         footer {
             background: black;
             color: var(--harvest-gold);
-            padding: 5rem 1rem;
+            padding: 6rem 1rem;
             text-align: center;
-            margin-top: 5rem;
+            border-top: 10px solid var(--claret-red);
         }
 
         .contact-btn {
             display: inline-block;
-            background: var(--claret-red);
-            color: white;
-            padding: 1.5rem 3rem;
+            background: var(--harvest-gold);
+            color: black;
+            padding: 2rem 4rem;
             text-decoration: none;
             font-family: 'Rubik Mono One', sans-serif;
-            font-size: 1.3rem;
-            border-radius: 0; /* aggressive corners */
+            font-size: 1.5rem;
+            border-radius: 100px;
             margin-top: 2rem;
-            border: 5px solid white;
-            transition: all 0.1s;
+            box-shadow: 0 0 30px var(--harvest-gold);
+            transition: transform 0.2s;
         }
 
-        .contact-btn:hover {
-            background: white;
-            color: black;
-            transform: scale(1.1);
-        }
+        .contact-btn:hover { transform: scale(1.1) rotate(-2deg); }
 
-        /* --- Responsive Design (Lo-Fi) --- */
         @media (max-width: 768px) {
-            header h1 { font-size: 2.2rem; }
-            h2 { font-size: 1.5rem; }
-            section { width: 95%; padding: 2rem 5%; }
+            header h1 { font-size: 1.9rem; }
+            h2 { font-size: 1.3rem; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>⚡ MEEKA FEESHAR'S NUMBER MAGIC ⚡</h1>
-        <p>They aren't just digits... they're DYNAMITE! 🧨</p>
-        <div style="margin-top:1rem;" class="blink">WARNING: High Voltage Statistics Inside!</div>
+        <h1>MEEKA FEESHAR:<br>NUMBER MAGIC</h1>
+        <p>I DON'T JUST CRUNCH NUMBERS. I MAKE THEM DANCE.</p>
+        <div style="margin-top:2rem;" class="blink">STATUS: SUPREME DATA ACCURACY ACHIEVED</div>
     </header>
 
     <section id="services">
-        <h2>Our Aggressive Services</h2>
+        <h2>Unrivaled Expertise</h2>
         <div class="services-grid">
             <div class="service-card">
-                <h3>Extreme Analysis</h3>
-                <p>We take your weak, pathetic numbers and interrogate them until they tell us the TRUTH! Satisfaction guaranteed (or we will analyze you next)!</p>
+                <h3>Prophetic Analytics</h3>
+                <p>Why wait for the future when I've already calculated it? I provide insights so accurate they feel like spoilers for your own life.</p>
             </div>
             <div class="service-card">
-                <h3>Total Prediction Zone</h3>
-                <p>Forget the future! We foresee the future *of the future*! Our predictive algorithms are so advanced they are legally banned in three states!</p>
+                <h3>Absolute Visualization</h3>
+                <p>My charts don't just show data; they tell a story of triumph. I turn "boring spreadsheets" into visual masterpieces that belong in a gallery.</p>
             </div>
             <div class="service-card">
-                <h3>Mind-Bending Visuals</h3>
-                <p>Charts so complex and colorful they will make your eyeballs throb with KNOWLEDGE! We don't use 'pie charts', we use 'WEAPONIZED DATA GRAPHICS'!</p>
+                <h3>Strategic Domination</h3>
+                <p>Most people guess. I know. With my statistical models, every decision you make becomes a calculated masterpiece of victory.</p>
             </div>
         </div>
     </section>
 
     <section id="testimonials">
-        <h2>Unsolicited Praise!</h2>
+        <h2>Tales of Transformation</h2>
         
         <div class="test-card">
-            <p>Meeka looked at my spreadsheet for four seconds, screamed 'LOGARITHMIC!', and my quarterly profits instantly tripled. I don't know how it worked, but I'm terrified of his power.</p>
-            <span>- Gary B., Local Business Owner</span>
+            <p>"Meeka whispered a series of prime numbers into my ear, and suddenly my company's overhead vanished. He is not a man; he is a living algorithm."</p>
+            <span>- Sterling V., CEO of Everything</span>
         </div>
 
         <div class="test-card">
-            <p>I thought predictive modeling was a scam until Meeka predicted exactly what I was going to have for lunch three weeks from now. (It was a soggy tuna sandwich). He is a spooky data wizard!</p>
-            <span>- Brenda L., Former Skeptic</span>
-        </div>
-
-        <div class="test-card">
-            <p>Our company's data visualization was boring. Meeka created a dashboard that was just one giant, pulsing red pixel that gets bigger when we lose money. It is highly effective motivation.</p>
-            <span>- Chad, Corporate VP of Synergy</span>
+            <p>"I asked for a simple standard deviation. Meeka gave me a blueprint for a decade of global prosperity. I'm honestly intimidated by his intellect."</p>
+            <span>- Dr. Aris Totle, Professional Smart Person</span>
         </div>
     </section>
 
     <section id="about" style="background-color: var(--cream); color: black;">
-        <h2>Who is Meeka Feeshar?</h2>
-        <div style="font-size: 1.3rem;">
-            <p>Meeka Feeshar didn’t study statistics; statistics surrendered to him! He is the undisputed heavyweight champion of data handling, a freelance phenomenon who can perform complex regression analysis *with his eyes closed*!</p>
-            <p style="margin-top: 1rem; font-weight: bold;">If you need answers, and you are willing to pay an exorbitant fee for aggressive mathematics, you need Meeka!</p>
+        <h2>The Legend Himself</h2>
+        <div style="font-size: 1.4rem;">
+            <p>Meeka Feeshar was born with a calculator in one hand and a dream in the other. He has never seen a p-value he couldn't tame, nor a dataset he couldn't charm into submission.</p>
+            <p style="margin-top: 1.5rem; font-weight: bold; text-align: center; font-size: 1.8rem;">Veni, Vidi, Vici, Calculus.</p>
         </div>
     </section>
 
     <footer>
-        <h2 style="background:none; border:none; color: white;">DO NOT DELAY!</h2>
-        <p class="blink" style="font-size: 1.5rem;">The numbers are waiting...</p>
-        <p style="margin-top: 1rem;">Are you brave enough for Number Magic?</p>
-        <a href="mailto:magic@meekafeeshar.com?subject=I AM READY FOR THE MAGIC" class="contact-btn">UNLEASH MEEKA!</a>
-        <p style="margin-top: 3rem; font-size: 0.7rem; opacity: 0.5;">This website is optimized for Netscape Navigator 4.0.</p>
+        <h2 style="background:none; border:none; color: white; box-shadow: none;">WITNESS THE MAGIC</h2>
+        <p style="font-size: 1.5rem;">The numbers have spoken. They want Meeka.</p>
+        <a href="mailto:magic@meekafeeshar.com" class="contact-btn">ASCEND NOW</a>
+        <p style="margin-top: 4rem; font-size: 0.8rem; opacity: 0.5;">Best viewed while wearing a polyester leisure suit.</p>
     </footer>
 
 </body>
