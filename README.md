@@ -1,0 +1,2 @@
+# octopus
+trying out vibecoding
